@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# AspireAid
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AspireAid is a web application designed to help students and users access information about scholarships, applications, and educational resources. The project consists of a **frontend** built with React and a **backend** built with Java Spring Boot.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+AspireAid/
+├── Frontend/ # React application
+└── Backend/ # Spring Boot application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+yaml
+Copy code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User registration and authentication
+- Dashboard to view available scholarships
+- Scholarship application submission
+- Admin panel to manage scholarships and users
+- Responsive and user-friendly UI
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have the following installed:
 
-### `npm run eject`
+- [Node.js and npm](https://nodejs.org/)
+- [Java JDK 17+](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [Maven](https://maven.apache.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Navigate to the `Frontend` directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd Frontend
+Install dependencies:
 
-## Learn More
+bash
+Copy code
+npm install
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copy code
+npm start
+Open http://localhost:3000 in your browser to view the application. The page will reload automatically when you make changes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Running the Backend
+Navigate to the Backend directory:
 
-### Code Splitting
+bash
+Copy code
+cd Backend
+Build and run the Spring Boot application using Maven:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+bash
+Copy code
+mvn clean install
+mvn spring-boot:run
+The backend will start on http://localhost:8080 by default.
 
-### Analyzing the Bundle Size
+Deployment
+Build the frontend for production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+bash
+Copy code
+npm run build
+Deploy the build/ folder to your preferred web server.
 
-### Making a Progressive Web App
+Ensure the backend server is running and connected to your database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Technologies Used
+Frontend: React, JavaScript, HTML, CSS
 
-### Advanced Configuration
+Backend: Java, Spring Boot, Maven
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Database: MySQL / PostgreSQL (configure as needed)
 
-### Deployment
+Tools: Eclipse/IntelliJ, Node.js, npm, Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Folder Structure Details
+Frontend
 
-### `npm run build` fails to minify
+src/ – React components, pages, and assets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+public/ – Static files
+
+package.json – Project dependencies and scripts
+
+Backend
+
+src/main/java – Application source code
+
+src/main/resources – Configuration files (e.g., application.properties)
+
+pom.xml – Maven project file and dependencies
+
+Contributing
+Fork the repository
+
+Create your feature branch (git checkout -b feature/YourFeature)
+
+Commit your changes (git commit -m "Add YourFeature")
+
+Push to the branch (git push origin feature/YourFeature)
+
+Create a Pull Request
+
+
+
+Contact
+For any queries or support, you can contact:
+
+Developer: Lakshmi Narayana
+
+GitHub: https://github.com/lakshminarayana23
