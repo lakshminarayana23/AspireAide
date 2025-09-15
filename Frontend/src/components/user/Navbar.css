@@ -1,0 +1,106 @@
+/* GENERAL STYLES */
+.header {
+    background: #ffffff; /* White background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo_text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2b50c7; /* Deep blue for visibility */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .logo_text:hover {
+    transform: scale(1.1);
+    color: #4e8ef5; /* Lighter blue on hover */
+  }
+  
+  .nav_menu_list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .nav_menu_item {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .nav_menu_link {
+    text-decoration: none;
+    color: #2b50c7; /* Deep blue for visibility */
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .nav_menu_link:hover {
+    color: #4e8ef5; /* Lighter blue on hover */
+    text-shadow: 0 2px 8px rgba(78, 142, 245, 0.8);
+  }
+  
+  .nav_menu_dropdown .dropdown-menu {
+    background: #ffffff; /* White dropdown background */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav_menu_dropdown .dropdown-item {
+    color: #2b50c7; /* Dropdown items in blue */
+  }
+  
+  .nav_menu_dropdown .dropdown-item:hover {
+    background: #e0f2ff; /* Light blue hover effect */
+    color: #2b50c7;
+  }
+  
+  .logout_btn {
+    background: none;
+    color: #2b50c7; /* Visible button text */
+    border: 2px solid #2b50c7;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout_btn:hover {
+    background: #2b50c7;
+    color: #ffffff; /* Text turns white on hover */
+  }
+  
+  /* MOBILE MENU */
+  @media screen and (max-width: 768px) {
+    .toggle_btn {
+      color: #2b50c7; /* Visible menu toggle icon */
+    }
+  
+    .close_btn {
+      color: #2b50c7; /* Close button is visible */
+    }
+  
+    .nav_menu_list {
+      gap: 20px;
+    }
+  }
+  
