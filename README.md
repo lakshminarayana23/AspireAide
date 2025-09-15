@@ -1,0 +1,2 @@
+# AspireAide
+Scholarship Management System
